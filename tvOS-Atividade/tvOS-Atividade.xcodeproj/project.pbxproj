@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E9B922A1CD783120035FDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B92291CD783120035FDBB /* AppDelegate.swift */; };
+		5E9B922C1CD783120035FDBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B922B1CD783120035FDBB /* ViewController.swift */; };
+		5E9B922F1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B922D1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld */; };
+		5E9B92321CD783120035FDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B92301CD783120035FDBB /* Main.storyboard */; };
+		5E9B92341CD783120035FDBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B92331CD783120035FDBB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E9B92261CD783120035FDBB /* tvOS-Atividade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Atividade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9B92291CD783120035FDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E9B922B1CD783120035FDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E9B922E1CD783120035FDBB /* tvOS_Atividade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tvOS_Atividade.xcdatamodel; sourceTree = "<group>"; };
+		5E9B92311CD783120035FDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E9B92331CD783120035FDBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E9B92351CD783120035FDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E9B92231CD783120035FDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E9B921D1CD783120035FDBB = {
+			isa = PBXGroup;
+			children = (
+				5E9B92281CD783120035FDBB /* tvOS-Atividade */,
+				5E9B92271CD783120035FDBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E9B92271CD783120035FDBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B92261CD783120035FDBB /* tvOS-Atividade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E9B92281CD783120035FDBB /* tvOS-Atividade */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B92291CD783120035FDBB /* AppDelegate.swift */,
+				5E9B922B1CD783120035FDBB /* ViewController.swift */,
+				5E9B92301CD783120035FDBB /* Main.storyboard */,
+				5E9B92331CD783120035FDBB /* Assets.xcassets */,
+				5E9B92351CD783120035FDBB /* Info.plist */,
+				5E9B922D1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld */,
+			);
+			path = "tvOS-Atividade";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E9B92251CD783120035FDBB /* tvOS-Atividade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E9B92381CD783120035FDBB /* Build configuration list for PBXNativeTarget "tvOS-Atividade" */;
+			buildPhases = (
+				5E9B92221CD783120035FDBB /* Sources */,
+				5E9B92231CD783120035FDBB /* Frameworks */,
+				5E9B92241CD783120035FDBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS-Atividade";
+			productName = "tvOS-Atividade";
+			productReference = 5E9B92261CD783120035FDBB /* tvOS-Atividade.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E9B921E1CD783120035FDBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Gabriel Alberto";
+				TargetAttributes = {
+					5E9B92251CD783120035FDBB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5E9B92211CD783120035FDBB /* Build configuration list for PBXProject "tvOS-Atividade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E9B921D1CD783120035FDBB;
+			productRefGroup = 5E9B92271CD783120035FDBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E9B92251CD783120035FDBB /* tvOS-Atividade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E9B92241CD783120035FDBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B92341CD783120035FDBB /* Assets.xcassets in Resources */,
+				5E9B92321CD783120035FDBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E9B92221CD783120035FDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B922C1CD783120035FDBB /* ViewController.swift in Sources */,
+				5E9B922A1CD783120035FDBB /* AppDelegate.swift in Sources */,
+				5E9B922F1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E9B92301CD783120035FDBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E9B92311CD783120035FDBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E9B92361CD783120035FDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		5E9B92371CD783120035FDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E9B92391CD783120035FDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "tvOS-Atividade/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gabriel.tvOS-Atividade";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E9B923A1CD783120035FDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "tvOS-Atividade/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gabriel.tvOS-Atividade";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E9B92211CD783120035FDBB /* Build configuration list for PBXProject "tvOS-Atividade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9B92361CD783120035FDBB /* Debug */,
+				5E9B92371CD783120035FDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E9B92381CD783120035FDBB /* Build configuration list for PBXNativeTarget "tvOS-Atividade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9B92391CD783120035FDBB /* Debug */,
+				5E9B923A1CD783120035FDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E9B922D1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E9B922E1CD783120035FDBB /* tvOS_Atividade.xcdatamodel */,
+			);
+			currentVersion = 5E9B922E1CD783120035FDBB /* tvOS_Atividade.xcdatamodel */;
+			path = tvOS_Atividade.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5E9B921E1CD783120035FDBB /* Project object */;
+}
