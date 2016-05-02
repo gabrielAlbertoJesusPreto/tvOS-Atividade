@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C33B2BC1CD78FF50005765F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B2BB1CD78FF50005765F /* MasterViewController.swift */; };
+		5C33B2BF1CD797F40005765F /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */; };
 		5E9B922A1CD783120035FDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B92291CD783120035FDBB /* AppDelegate.swift */; };
 		5E9B922C1CD783120035FDBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B922B1CD783120035FDBB /* ViewController.swift */; };
 		5E9B922F1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B922D1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C33B2BB1CD78FF50005765F /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = ../MasterViewController.swift; sourceTree = "<group>"; };
+		5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
 		5E9B92261CD783120035FDBB /* tvOS-Atividade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Atividade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9B92291CD783120035FDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9B922B1CD783120035FDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C33B2C11CD797FF0005765F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		5E9B921D1CD783120035FDBB = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +66,11 @@
 		5E9B92281CD783120035FDBB /* tvOS-Atividade */ = {
 			isa = PBXGroup;
 			children = (
+				5C33B2BB1CD78FF50005765F /* MasterViewController.swift */,
 				5E9B92291CD783120035FDBB /* AppDelegate.swift */,
 				5E9B922B1CD783120035FDBB /* ViewController.swift */,
 				5E9B92301CD783120035FDBB /* Main.storyboard */,
+				5C33B2C11CD797FF0005765F /* Cells */,
 				5E9B92331CD783120035FDBB /* Assets.xcassets */,
 				5E9B92351CD783120035FDBB /* Info.plist */,
 				5E9B922D1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld */,
@@ -134,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C33B2BF1CD797F40005765F /* MasterTableViewCell.swift in Sources */,
+				5C33B2BC1CD78FF50005765F /* MasterViewController.swift in Sources */,
 				5E9B922C1CD783120035FDBB /* ViewController.swift in Sources */,
 				5E9B922A1CD783120035FDBB /* AppDelegate.swift in Sources */,
 				5E9B922F1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld in Sources */,
@@ -280,6 +296,7 @@
 				5E9B923A1CD783120035FDBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
