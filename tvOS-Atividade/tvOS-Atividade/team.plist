@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Frances</key>
-	<dict>
-		<key>1</key>
+	<array>
 		<dict>
 			<key>name</key>
 			<string>Paris Satin-Germain</string>
@@ -21,7 +20,6 @@
 			<key>imageName</key>
 			<string>PSG</string>
 		</dict>
-		<key>2</key>
 		<dict>
 			<key>name</key>
 			<string>Lyon</string>
@@ -38,7 +36,6 @@
 			<key>imageName</key>
 			<string>Lyon</string>
 		</dict>
-		<key>3</key>
 		<dict>
 			<key>name</key>
 			<string>Mônaco</string>
@@ -55,7 +52,6 @@
 			<key>imageName</key>
 			<string>Mônaco</string>
 		</dict>
-		<key>4</key>
 		<dict>
 			<key>name</key>
 			<string>Saint-Étienne</string>
@@ -72,7 +68,6 @@
 			<key>imageName</key>
 			<string>Saint-Etienne</string>
 		</dict>
-		<key>5</key>
 		<dict>
 			<key>name</key>
 			<string>Nice</string>
@@ -89,7 +84,6 @@
 			<key>imageName</key>
 			<string>Nice</string>
 		</dict>
-		<key>6</key>
 		<dict>
 			<key>name</key>
 			<string>Lille</string>
@@ -106,7 +100,6 @@
 			<key>imageName</key>
 			<string>Lille</string>
 		</dict>
-		<key>7</key>
 		<dict>
 			<key>name</key>
 			<string>Rennes</string>
@@ -123,7 +116,6 @@
 			<key>imageName</key>
 			<string>Rennes</string>
 		</dict>
-		<key>8</key>
 		<dict>
 			<key>name</key>
 			<string>Angers</string>
@@ -140,7 +132,6 @@
 			<key>imageName</key>
 			<string>Angers</string>
 		</dict>
-		<key>9</key>
 		<dict>
 			<key>name</key>
 			<string>Nantes</string>
@@ -157,7 +148,6 @@
 			<key>imageName</key>
 			<string>Nantes</string>
 		</dict>
-		<key>10</key>
 		<dict>
 			<key>name</key>
 			<string>Caen</string>
@@ -174,7 +164,6 @@
 			<key>imageName</key>
 			<string>Caen</string>
 		</dict>
-		<key>11</key>
 		<dict>
 			<key>name</key>
 			<string>Montpellier</string>
@@ -191,7 +180,6 @@
 			<key>imageName</key>
 			<string>Montpellier</string>
 		</dict>
-		<key>12</key>
 		<dict>
 			<key>name</key>
 			<string>Bordeaux</string>
@@ -208,7 +196,6 @@
 			<key>imageName</key>
 			<string>Bordeaux</string>
 		</dict>
-		<key>13</key>
 		<dict>
 			<key>name</key>
 			<string>Olympique</string>
@@ -225,7 +212,6 @@
 			<key>imageName</key>
 			<string>Olympique</string>
 		</dict>
-		<key>14</key>
 		<dict>
 			<key>name</key>
 			<string>Batia</string>
@@ -242,7 +228,6 @@
 			<key>imageName</key>
 			<string>Batia</string>
 		</dict>
-		<key>15</key>
 		<dict>
 			<key>name</key>
 			<string>Guingamp</string>
@@ -259,7 +244,6 @@
 			<key>imageName</key>
 			<string>Guingamp</string>
 		</dict>
-		<key>16</key>
 		<dict>
 			<key>name</key>
 			<string>Lorient-Bretagne Sud</string>
@@ -276,7 +260,6 @@
 			<key>imageName</key>
 			<string>Lorient-BretagneSud</string>
 		</dict>
-		<key>17</key>
 		<dict>
 			<key>name</key>
 			<string>Gazélec Ajaccio</string>
@@ -293,7 +276,6 @@
 			<key>imageName</key>
 			<string>Gazélec_Ajaccio</string>
 		</dict>
-		<key>18</key>
 		<dict>
 			<key>name</key>
 			<string>Reims</string>
@@ -310,7 +292,6 @@
 			<key>imageName</key>
 			<string>Reims</string>
 		</dict>
-		<key>19</key>
 		<dict>
 			<key>name</key>
 			<string>Toulouse</string>
@@ -327,7 +308,6 @@
 			<key>imageName</key>
 			<string>Toulouse</string>
 		</dict>
-		<key>20</key>
 		<dict>
 			<key>name</key>
 			<string>Troyes</string>
@@ -344,6 +324,329 @@
 			<key>imageName</key>
 			<string>Troyes</string>
 		</dict>
-	</dict>
+	</array>
+	<key>Espanhol</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Barcelona</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>27</integer>
+			<key>draw</key>
+			<integer>4</integer>
+			<key>loser</key>
+			<integer>5</integer>
+			<key>points</key>
+			<integer>85</integer>
+			<key>imageName</key>
+			<string>Barcelona</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Atlético Madrid</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>27</integer>
+			<key>draw</key>
+			<integer>4</integer>
+			<key>loser</key>
+			<integer>5</integer>
+			<key>points</key>
+			<integer>85</integer>
+			<key>imageName</key>
+			<string>Atlético Madrid</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Real Madrid</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>26</integer>
+			<key>draw</key>
+			<integer>6</integer>
+			<key>loser</key>
+			<integer>4</integer>
+			<key>points</key>
+			<integer>84</integer>
+			<key>imageName</key>
+			<string>Real Madrid</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Villarreal</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>18</integer>
+			<key>draw</key>
+			<integer>10</integer>
+			<key>loser</key>
+			<integer>8</integer>
+			<key>points</key>
+			<integer>64</integer>
+			<key>imageName</key>
+			<string>Villarreal</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Athletic</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>17</integer>
+			<key>draw</key>
+			<integer>7</integer>
+			<key>loser</key>
+			<integer>12</integer>
+			<key>points</key>
+			<integer>58</integer>
+			<key>imageName</key>
+			<string>Athletic</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Celta de Vigo</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>16</integer>
+			<key>draw</key>
+			<integer>9</integer>
+			<key>loser</key>
+			<integer>11</integer>
+			<key>points</key>
+			<integer>57</integer>
+			<key>imageName</key>
+			<string>Celta de Vigo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sevilla</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>14</integer>
+			<key>draw</key>
+			<integer>10</integer>
+			<key>loser</key>
+			<integer>12</integer>
+			<key>points</key>
+			<integer>52</integer>
+			<key>imageName</key>
+			<string>Sevilla</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Málaga</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>11</integer>
+			<key>draw</key>
+			<integer>12</integer>
+			<key>loser</key>
+			<integer>13</integer>
+			<key>points</key>
+			<integer>45</integer>
+			<key>imageName</key>
+			<string>Málaga</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Valencia</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>11</integer>
+			<key>draw</key>
+			<integer>11</integer>
+			<key>loser</key>
+			<integer>14</integer>
+			<key>points</key>
+			<integer>44</integer>
+			<key>imageName</key>
+			<string>Valencia</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Las Palmas</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>12</integer>
+			<key>draw</key>
+			<integer>7</integer>
+			<key>loser</key>
+			<integer>17</integer>
+			<key>points</key>
+			<integer>43</integer>
+			<key>imageName</key>
+			<string>Las Palmas</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Real Sociedad</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>11</integer>
+			<key>draw</key>
+			<integer>9</integer>
+			<key>loser</key>
+			<integer>16</integer>
+			<key>points</key>
+			<integer>42</integer>
+			<key>imageName</key>
+			<string>Real Sociedad</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sociedad Deportiva Eibar</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>11</integer>
+			<key>draw</key>
+			<integer>9</integer>
+			<key>loser</key>
+			<integer>16</integer>
+			<key>points</key>
+			<integer>42</integer>
+			<key>imageName</key>
+			<string>Sociedad Deportiva Eibar</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Real Betis Balompié</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>10</integer>
+			<key>draw</key>
+			<integer>11</integer>
+			<key>loser</key>
+			<integer>15</integer>
+			<key>points</key>
+			<integer>41</integer>
+			<key>imageName</key>
+			<string>Real Betis Balompié</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Reial Club Deportiu Espanyol de Barcelona</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>11</integer>
+			<key>draw</key>
+			<integer>7</integer>
+			<key>loser</key>
+			<integer>18</integer>
+			<key>points</key>
+			<integer>40</integer>
+			<key>imageName</key>
+			<string>Reial Club Deportiu Espanyol de Barcelona</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>La Coruña</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>7</integer>
+			<key>draw</key>
+			<integer>18</integer>
+			<key>loser</key>
+			<integer>11</integer>
+			<key>points</key>
+			<integer>39</integer>
+			<key>imageName</key>
+			<string>La Coruña</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Granada</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>9</integer>
+			<key>draw</key>
+			<integer>9</integer>
+			<key>loser</key>
+			<integer>18</integer>
+			<key>points</key>
+			<integer>36</integer>
+			<key>imageName</key>
+			<string>Granada</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rayo Vallecano</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>8</integer>
+			<key>draw</key>
+			<integer>11</integer>
+			<key>loser</key>
+			<integer>17</integer>
+			<key>points</key>
+			<integer>35</integer>
+			<key>imageName</key>
+			<string>Rayo Vallecano</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Gijón</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>9</integer>
+			<key>draw</key>
+			<integer>8</integer>
+			<key>loser</key>
+			<integer>19</integer>
+			<key>points</key>
+			<integer>35</integer>
+			<key>imageName</key>
+			<string>Gijón</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Getafe</string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>9</integer>
+			<key>draw</key>
+			<integer>8</integer>
+			<key>loser</key>
+			<integer>19</integer>
+			<key>points</key>
+			<integer>35</integer>
+			<key>imageName</key>
+			<string>Getafe</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Levante Unión Deportiva </string>
+			<key>match</key>
+			<integer>36</integer>
+			<key>winner</key>
+			<integer>7</integer>
+			<key>draw</key>
+			<integer>8</integer>
+			<key>loser</key>
+			<integer>21</integer>
+			<key>points</key>
+			<integer>29</integer>
+			<key>imageName</key>
+			<string>Levante Unión Deportiva </string>
+		</dict>
+	</array>
 </dict>
 </plist>

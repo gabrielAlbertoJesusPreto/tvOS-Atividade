@@ -12,7 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // getting path to GameData.plist
+        
+        var myDict: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("team", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)
+        }
+        
+        
+        
+        
+        if let dict = myDict {
+            print(dict)
+            // Use your dict here
+        }
     }
 
     override func didReceiveMemoryWarning() {
