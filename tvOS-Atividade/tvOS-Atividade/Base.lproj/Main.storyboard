@@ -186,7 +186,7 @@
                         <color key="backgroundColor" red="0.3300528526" green="0.84071052069999996" blue="0.71913725139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="campeonatosIdentifier" id="KSq-I8-zDo" customClass="MasterTableViewCell" customModule="tvOS_Atividade" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="54" width="634" height="66"/>
+                                <rect key="frame" x="0.0" y="54" width="594" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSq-I8-zDo" id="LIK-B1-jyz">
                                     <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
