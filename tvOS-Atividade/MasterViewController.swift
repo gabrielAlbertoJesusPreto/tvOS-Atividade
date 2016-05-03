@@ -25,7 +25,7 @@ enum Campeonatos: Int, CustomStringConvertible {
 }
 
 protocol AlterarCampeonatoDelegate: class {
-    func alterarCampeonato(order: Campeonatos)
+    func alterarCampeonato(description: Campeonatos)
 }
 
     
@@ -37,9 +37,14 @@ protocol AlterarCampeonatoDelegate: class {
             super.viewDidLoad()
             
             tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 200))
+            
+            if let detailNav = splitViewController?.viewControllers.last as? UINavigationController, alterarDelegate = detailNav.topViewController as? AlterarCampeonatoDelegate {
+                delegate = alterarDelegate
+            }
+            
         }
     }
-    
+
     // MARK: - Table view data source
     extension MasterTableViewController {
         override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -60,7 +65,7 @@ protocol AlterarCampeonatoDelegate: class {
         }
         
         override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Campeonato"
+            return "Campeonatos"
         }
     }
     
