@@ -11,8 +11,10 @@
 		1152A5BF1CD8D6FD00DAAD8F /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1152A5BE1CD8D6FD00DAAD8F /* team.plist */; };
 		5C33B2BC1CD78FF50005765F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B2BB1CD78FF50005765F /* MasterViewController.swift */; };
 		5C33B2BF1CD797F40005765F /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */; };
+		5E3F1CCD1CD7A11200941CC0 /* ClassificacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F1CCC1CD7A11200941CC0 /* ClassificacaoViewController.swift */; };
+		5E3F1CCF1CD7A14B00941CC0 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F1CCE1CD7A14B00941CC0 /* HeaderTableViewCell.swift */; };
+		5E3F1CD11CD7A16100941CC0 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F1CD01CD7A16100941CC0 /* TimeTableViewCell.swift */; };
 		5E9B922A1CD783120035FDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B92291CD783120035FDBB /* AppDelegate.swift */; };
-		5E9B922C1CD783120035FDBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B922B1CD783120035FDBB /* ViewController.swift */; };
 		5E9B922F1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B922D1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld */; };
 		5E9B92321CD783120035FDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B92301CD783120035FDBB /* Main.storyboard */; };
 		5E9B92341CD783120035FDBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B92331CD783120035FDBB /* Assets.xcassets */; };
@@ -23,9 +25,11 @@
 		1152A5BE1CD8D6FD00DAAD8F /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
 		5C33B2BB1CD78FF50005765F /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = ../MasterViewController.swift; sourceTree = "<group>"; };
 		5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		5E3F1CCC1CD7A11200941CC0 /* ClassificacaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificacaoViewController.swift; sourceTree = "<group>"; };
+		5E3F1CCE1CD7A14B00941CC0 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		5E3F1CD01CD7A16100941CC0 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		5E9B92261CD783120035FDBB /* tvOS-Atividade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Atividade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9B92291CD783120035FDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E9B922B1CD783120035FDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E9B922E1CD783120035FDBB /* tvOS_Atividade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tvOS_Atividade.xcdatamodel; sourceTree = "<group>"; };
 		5E9B92311CD783120035FDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E9B92331CD783120035FDBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */,
+				5E3F1CCE1CD7A14B00941CC0 /* HeaderTableViewCell.swift */,
+				5E3F1CD01CD7A16100941CC0 /* TimeTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				5C33B2BB1CD78FF50005765F /* MasterViewController.swift */,
+				5E3F1CCC1CD7A11200941CC0 /* ClassificacaoViewController.swift */,
 				5E9B92291CD783120035FDBB /* AppDelegate.swift */,
 				5E9B922B1CD783120035FDBB /* ViewController.swift */,
 				1152A5BE1CD8D6FD00DAAD8F /* team.plist */,
@@ -116,6 +123,7 @@
 				TargetAttributes = {
 					5E9B92251CD783120035FDBB = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = U5QFCQU39B;
 					};
 				};
 			};
@@ -155,11 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3F1CD11CD7A16100941CC0 /* TimeTableViewCell.swift in Sources */,
 				1152A5BD1CD8D23700DAAD8F /* Team.swift in Sources */,
 				5C33B2BF1CD797F40005765F /* MasterTableViewCell.swift in Sources */,
 				5C33B2BC1CD78FF50005765F /* MasterViewController.swift in Sources */,
-				5E9B922C1CD783120035FDBB /* ViewController.swift in Sources */,
 				5E9B922A1CD783120035FDBB /* AppDelegate.swift in Sources */,
+				5E3F1CCD1CD7A11200941CC0 /* ClassificacaoViewController.swift in Sources */,
+				5E3F1CCF1CD7A14B00941CC0 /* HeaderTableViewCell.swift in Sources */,
 				5E9B922F1CD783120035FDBB /* tvOS_Atividade.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,10 +276,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "tvOS-Atividade/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel.tvOS-Atividade";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -278,10 +291,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "tvOS-Atividade/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel.tvOS-Atividade";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
