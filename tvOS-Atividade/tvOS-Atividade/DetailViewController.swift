@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
 
-        imageView.image = UIImage(named: "Barcelona")
+        imageView.image = UIImage(named: team.imageName!)
         //imageView.canBecomeFocused()
         
         // Do any additional setup after loading the view.
@@ -67,13 +67,13 @@ extension DetailViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
         
         
-        cell.posicaoLabel.text = String(indexPath.row)
-        cell.timeLabel.text = "Corinthians"
-        cell.jogosLabel.text = "1"
-        cell.vitoriasLabel.text = "1"
-        cell.derrotasLabel.text = "0"
-        cell.empatesLabel.text = "0"
-        cell.pontosLabel.text = "3"
+        cell.posicaoLabel.text = String(team.position)
+        cell.timeLabel.text = team.name
+        cell.jogosLabel.text = String(team.match)
+        cell.vitoriasLabel.text = String(team.winner)
+        cell.derrotasLabel.text = String(team.loser)
+        cell.empatesLabel.text = String(team.draw)
+        cell.pontosLabel.text = String(team.points)
         
         return cell
     }
