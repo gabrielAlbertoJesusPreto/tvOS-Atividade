@@ -12,7 +12,9 @@ class ClassificacaoViewController: UIViewController {
     
     private let segueIdentifier = ""
     
-    private let championships = []
+    private var championships = []
+    
+    private let buscaService = TeamService.sharedInstance
     
     @IBOutlet weak var championshipDetail: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +26,7 @@ class ClassificacaoViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        championships = buscaService.getInfosByChampionship("Ingles")
         self.tableView.reloadData()
 
         
@@ -60,7 +63,7 @@ extension ClassificacaoViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return championships.count+1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -73,14 +76,16 @@ extension ClassificacaoViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
         
-        
         cell.posicaoLabel.text = String(indexPath.row)
-        cell.timeLabel.text = "Corinthians"
-        cell.jogosLabel.text = "1"
-        cell.vitoriasLabel.text = "1"
-        cell.derrotasLabel.text = "0"
-        cell.empatesLabel.text = "0"
-        cell.pontosLabel.text = "3"
+        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
+            return cell
+        }
+        cell.timeLabel.text = Item.objectForKey("name") as! NSString as String
+        cell.jogosLabel.text = "\(Item.objectForKey("match") as! NSNumber)"
+        cell.vitoriasLabel.text = "\(Item.objectForKey("winner") as! NSNumber)"
+        cell.derrotasLabel.text = "\(Item.objectForKey("loser") as! NSNumber)"
+        cell.empatesLabel.text = "\(Item.objectForKey("draw") as! NSNumber)"
+        cell.pontosLabel.text = "\(Item.objectForKey("points") as! NSNumber)"
         
         return cell
     }
@@ -119,15 +124,23 @@ extension ClassificacaoViewController: UITableViewDelegate {
 extension ClassificacaoViewController: AlterarCampeonatoDelegate {
     func alterarCampeonato(description: Campeonatos) {
         if description.description == "Inglês" {
+            championships = buscaService.getInfosByChampionship("Ingles")
+            self.tableView.reloadData()
             print(description.description)
         }
         else if description.description == "Alemão" {
+            championships = buscaService.getInfosByChampionship("Alemao")
+            self.tableView.reloadData()
             print(description.description)
         }
         else if description.description == "Francês" {
+            championships = buscaService.getInfosByChampionship("Frances")
+            self.tableView.reloadData()
             print(description.description)
         }
-        else if description.description == "Espahol" {
+        else if description.description == "Espanhol" {
+            championships = buscaService.getInfosByChampionship("Espanhol")
+            self.tableView.reloadData()
             print(description.description)
         }
         
