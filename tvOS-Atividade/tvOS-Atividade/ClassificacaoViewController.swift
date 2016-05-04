@@ -102,8 +102,6 @@ extension ClassificacaoViewController: UITableViewDataSource {
         return cell
     }
     
-    
-    
 }
 
 // MARK: - Table view delegate
@@ -138,6 +136,8 @@ extension ClassificacaoViewController: AlterarCampeonatoDelegate {
             print(description.description)
         }
         else if description.description == "Espanhol" {
+            championships = buscaService.getInfosByChampionship("Espanhol")
+            self.tableView.reloadData()
             print(description.description)
         }
         
