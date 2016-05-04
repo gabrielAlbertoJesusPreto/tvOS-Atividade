@@ -19,13 +19,13 @@ class ViewController: UIViewController {
             myDict = NSDictionary(contentsOfFile: path)
         }
         
+        //print(myDict)
+        print(myDict!["Espanhol"])
         
         
         
-        if let dict = myDict {
-            print(dict)
-            // Use your dict here
-        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
