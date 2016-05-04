@@ -17,6 +17,7 @@ class TimeTableViewCell: UITableViewCell {
     @IBOutlet weak var derrotasLabel: UILabel!
     @IBOutlet weak var empatesLabel: UILabel!
     @IBOutlet weak var pontosLabel: UILabel!
+    @IBOutlet weak var logo: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
