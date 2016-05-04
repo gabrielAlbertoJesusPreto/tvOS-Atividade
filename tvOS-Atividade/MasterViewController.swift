@@ -10,14 +10,12 @@ import UIKit
 
 enum Campeonatos: Int, CustomStringConvertible {
     case ingles
-    case alemao
     case espanhol
     case frances
     
     var description: String {
         switch self {
         case .ingles: return "Inglês"
-        case .alemao: return "Alemão"
         case .espanhol: return "Espanhol"
         case .frances: return "Francês"
         }
@@ -52,7 +50,7 @@ protocol AlterarCampeonatoDelegate: class {
         }
         
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 4
+            return 3
         }
         
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

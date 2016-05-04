@@ -74,7 +74,7 @@ extension ClassificacaoViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
         
         
-        cell.posicaoLabel.text = String(indexPath.row)
+        cell.posicaoLabel.text = "\(String(indexPath.row))º"
         cell.timeLabel.text = "Corinthians"
         cell.jogosLabel.text = "1"
         cell.vitoriasLabel.text = "1"
@@ -121,13 +121,10 @@ extension ClassificacaoViewController: AlterarCampeonatoDelegate {
         if description.description == "Inglês" {
             print(description.description)
         }
-        else if description.description == "Alemão" {
-            print(description.description)
-        }
         else if description.description == "Francês" {
             print(description.description)
         }
-        else if description.description == "Espahol" {
+        else if description.description == "Espanhol" {
             print(description.description)
         }
         
