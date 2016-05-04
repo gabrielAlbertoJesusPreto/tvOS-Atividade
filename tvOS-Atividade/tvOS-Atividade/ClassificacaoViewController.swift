@@ -30,6 +30,7 @@ class ClassificacaoViewController: UIViewController {
         self.tableView.dataSource = self
         championships = buscaService.getInfosByChampionship("Ingles")
         self.tableView.reloadData()
+        
 
         
     }
@@ -60,6 +61,14 @@ extension ClassificacaoViewController: UITableViewDataSource {
         return championships.count+1
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 66
+        } else {
+            return 130
+        }
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
@@ -67,8 +76,12 @@ extension ClassificacaoViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier("HeaderIndentifier", forIndexPath: indexPath) as! HeaderTableViewCell
             return cell
         }
-        
+
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
+        cell.posicaoLabel.text = String(indexPath.row)
+        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
+            return cell
+        }
         
         cell.posicaoLabel.text = String(indexPath.row)
         guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
@@ -85,46 +98,10 @@ extension ClassificacaoViewController: UITableViewDataSource {
         return cell
     }
     
-    
-    
 }
 
 // MARK: - Table view delegate
 extension ClassificacaoViewController: UITableViewDelegate {
-//    func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-//        guard let indexPath = context.nextFocusedIndexPath else { return }
-//    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let detail = self.storyboard!.instantiateViewControllerWithIdentifier("detailView") as! DetailViewController
-        
-        
-        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
-            return
-        }
-        
-        
-        let team = Team()
-        
-        team.name = Item.objectForKey("name") as! NSString as String
-        team.imageName = Item.objectForKey("imageName") as! NSString as String
-        team.match = Item.objectForKey("match") as? Int
-        team.winner = Item.objectForKey("winner") as? Int
-        team.loser = Item.objectForKey("loser") as? Int
-        team.draw = Item.objectForKey("draw") as? Int
-        team.position = indexPath.row
-        team.points = Item.objectForKey("points") as? Int
-
-        
-        detail.team = team
-        
-        
-        self.navigationController?.pushViewController(detail, animated: false)
-        
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-    
-    
     
     func tableView(tableView: UITableView, canFocusRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         
