@@ -18,6 +18,7 @@ class Team: NSObject {
     var draw:Int?
     var points:Int?
     var position:Int?
+    var imageName:String?
     
     override init() {}
 
