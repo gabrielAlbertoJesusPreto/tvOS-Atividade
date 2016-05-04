@@ -67,13 +67,13 @@ extension DetailViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
         
         
-        cell.posicaoLabel.text = String(team.position)
-        cell.timeLabel.text = team.name
-        cell.jogosLabel.text = String(team.match)
-        cell.vitoriasLabel.text = String(team.winner)
-        cell.derrotasLabel.text = String(team.loser)
-        cell.empatesLabel.text = String(team.draw)
-        cell.pontosLabel.text = String(team.points)
+        cell.posicaoLabel!.text = String(team!.position!)
+        cell.timeLabel.text = team!.name!
+        cell.jogosLabel.text = String(team!.match!)
+        cell.vitoriasLabel.text = String(team!.winner!)
+        cell.derrotasLabel.text = String(team!.loser!)
+        cell.empatesLabel.text = String(team!.draw!)
+        cell.pontosLabel.text = String(team!.points!)
         
         return cell
     }

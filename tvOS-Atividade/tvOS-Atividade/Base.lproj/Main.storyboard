@@ -227,7 +227,6 @@
                                                     <outlet property="posicaoLabel" destination="R0d-c0-CmA" id="u4R-1E-X8H"/>
                                                     <outlet property="timeLabel" destination="6mR-8m-PAA" id="kpf-ks-htn"/>
                                                     <outlet property="vitoriasLabel" destination="HhJ-kA-KQS" id="C8q-8M-KE1"/>
-                                                    <segue destination="Xsc-au-aDf" kind="show" id="6fi-hF-ZOv"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -250,31 +249,31 @@
         <!--Detail View Controller-->
         <scene sceneID="aU1-zG-gxo">
             <objects>
-                <viewController id="Xsc-au-aDf" customClass="DetailViewController" customModule="tvOS_Atividade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailView" id="Xsc-au-aDf" customClass="DetailViewController" customModule="tvOS_Atividade" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GYZ-Ro-UG1"/>
                         <viewControllerLayoutGuide type="bottom" id="ehz-ga-AQh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fsn-e8-m1t">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-fw-Bbg">
-                                <rect key="frame" x="518" y="121" width="250" height="250"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-fw-Bbg">
+                                <rect key="frame" x="836" y="121" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="L0n-8J-foC"/>
                                     <constraint firstAttribute="height" constant="250" id="euN-A9-dbG"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="DjC-TC-3lZ">
-                                <rect key="frame" x="20" y="763" width="1245" height="317"/>
+                                <rect key="frame" x="20" y="763" width="1880" height="317"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderIndentifier" rowHeight="58" id="8jp-r0-sll" customClass="HeaderTableViewCell" customModule="tvOS_Atividade" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="54" width="1245" height="58"/>
+                                        <rect key="frame" x="0.0" y="54" width="1880" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8jp-r0-sll" id="TpP-aV-8ax">
-                                            <rect key="frame" x="0.0" y="0.0" width="1229" height="58"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1864" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pos." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e5-DL-kgy">
@@ -365,10 +364,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeIdentifier" id="9xB-cd-Ueh" customClass="TimeTableViewCell" customModule="tvOS_Atividade" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="126" width="1245" height="66"/>
+                                        <rect key="frame" x="0.0" y="126" width="1880" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9xB-cd-Ueh" id="eyI-lI-8je">
-                                            <rect key="frame" x="0.0" y="0.0" width="1229" height="66"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1864" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI5-rn-dWo">
