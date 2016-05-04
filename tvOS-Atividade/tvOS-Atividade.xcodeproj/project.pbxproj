@@ -32,7 +32,7 @@
 		5E3F1CCC1CD7A11200941CC0 /* ClassificacaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificacaoViewController.swift; sourceTree = "<group>"; };
 		5E3F1CCE1CD7A14B00941CC0 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		5E3F1CD01CD7A16100941CC0 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
-		5E9B92261CD783120035FDBB /* tvOS-Atividade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Atividade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9B92261CD783120035FDBB /* PlacarTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlacarTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9B92291CD783120035FDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9B922E1CD783120035FDBB /* tvOS_Atividade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tvOS_Atividade.xcdatamodel; sourceTree = "<group>"; };
 		5E9B92311CD783120035FDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		5E9B92271CD783120035FDBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E9B92261CD783120035FDBB /* tvOS-Atividade.app */,
+				5E9B92261CD783120035FDBB /* PlacarTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 			);
 			name = "tvOS-Atividade";
 			productName = "tvOS-Atividade";
-			productReference = 5E9B92261CD783120035FDBB /* tvOS-Atividade.app */;
+			productReference = 5E9B92261CD783120035FDBB /* PlacarTV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -288,7 +288,7 @@
 				INFOPLIST_FILE = "tvOS-Atividade/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel.tvOS-Atividade";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PlacarTV;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -303,7 +303,7 @@
 				INFOPLIST_FILE = "tvOS-Atividade/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gabriel.tvOS-Atividade";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PlacarTV;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

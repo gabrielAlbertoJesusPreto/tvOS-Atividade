@@ -62,8 +62,15 @@ protocol AlterarCampeonatoDelegate: class {
             return cell
         }
         
-        override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Campeonatos"
+        override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 100))
+            label.font = UIFont.systemFontOfSize(35, weight: UIFontWeightMedium)
+            label.textColor = UIColor.whiteColor()
+            label.text = "Campeonatos Internacionais"
+            
+            return label
+            
         }
     }
     

@@ -38,14 +38,6 @@ class ClassificacaoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-        
-        
-        
-        
-    }
-    
 
     /*
     // MARK: - Navigation
@@ -78,14 +70,17 @@ extension ClassificacaoViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
         
+        cell.posicaoLabel.text = String(indexPath.row)
+        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
+            return cell
+        }
         
-        cell.posicaoLabel.text = "\(String(indexPath.row))º"
-        cell.timeLabel.text = "Corinthians"
-        cell.jogosLabel.text = "1"
-        cell.vitoriasLabel.text = "1"
-        cell.derrotasLabel.text = "0"
-        cell.empatesLabel.text = "0"
-        cell.pontosLabel.text = "3"
+        cell.timeLabel.text = Item.objectForKey("name") as! NSString as String
+        cell.jogosLabel.text = "\(Item.objectForKey("match") as! NSNumber)"
+        cell.vitoriasLabel.text = "\(Item.objectForKey("winner") as! NSNumber)"
+        cell.derrotasLabel.text = "\(Item.objectForKey("loser") as! NSNumber)"
+        cell.empatesLabel.text = "\(Item.objectForKey("draw") as! NSNumber)"
+        cell.pontosLabel.text = "\(Item.objectForKey("points") as! NSNumber)"
         
         return cell
     }
@@ -154,12 +149,19 @@ extension ClassificacaoViewController: AlterarCampeonatoDelegate {
             self.tableView.reloadData()
             print(description.description)
         }
+        else if description.description == "Alemão" {
+            championships = buscaService.getInfosByChampionship("Alemao")
+            self.tableView.reloadData()
+            print(description.description)
+        }
         else if description.description == "Francês" {
             championships = buscaService.getInfosByChampionship("Frances")
             self.tableView.reloadData()
             print(description.description)
         }
         else if description.description == "Espanhol" {
+            championships = buscaService.getInfosByChampionship("Espanhol")
+            self.tableView.reloadData()
             print(description.description)
         }
         
