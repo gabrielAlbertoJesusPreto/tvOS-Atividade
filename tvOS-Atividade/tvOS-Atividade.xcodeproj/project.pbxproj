@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1152A5BD1CD8D23700DAAD8F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152A5BC1CD8D23700DAAD8F /* Team.swift */; };
 		1152A5BF1CD8D6FD00DAAD8F /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1152A5BE1CD8D6FD00DAAD8F /* team.plist */; };
+		11D8E1341CDA11A000413154 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8E1331CDA11A000413154 /* DetailViewController.swift */; };
 		5C33B2BC1CD78FF50005765F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B2BB1CD78FF50005765F /* MasterViewController.swift */; };
 		5C33B2BF1CD797F40005765F /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */; };
 		5C33B3281CDA14750005765F /* TeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33B3271CDA14750005765F /* TeamService.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1152A5BC1CD8D23700DAAD8F /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		1152A5BE1CD8D6FD00DAAD8F /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
+		11D8E1331CDA11A000413154 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5C33B2BB1CD78FF50005765F /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = ../MasterViewController.swift; sourceTree = "<group>"; };
 		5C33B2BD1CD797F40005765F /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
 		5C33B3271CDA14750005765F /* TeamService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamService.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				1152A5BC1CD8D23700DAAD8F /* Team.swift */,
 				5C33B3271CDA14750005765F /* TeamService.swift */,
 				5E9B92301CD783120035FDBB /* Main.storyboard */,
+				11D8E1331CDA11A000413154 /* DetailViewController.swift */,
 				5C33B2C11CD797FF0005765F /* Cells */,
 				5E9B92331CD783120035FDBB /* Assets.xcassets */,
 				5E9B92351CD783120035FDBB /* Info.plist */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D8E1341CDA11A000413154 /* DetailViewController.swift in Sources */,
 				5E3F1CD11CD7A16100941CC0 /* TimeTableViewCell.swift in Sources */,
 				1152A5BD1CD8D23700DAAD8F /* Team.swift in Sources */,
 				5C33B2BF1CD797F40005765F /* MasterTableViewCell.swift in Sources */,
