@@ -93,10 +93,6 @@ extension ClassificacaoViewController: UITableViewDataSource {
         cell.contentView.superview?.clipsToBounds = false
         cell.backgroundColor = UIColor.clearColor()
         
-        cell.posicaoLabel.text = String(indexPath.row)
-        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
-            return cell
-        }
         
         cell.timeLabel.text = Item.objectForKey("name") as! NSString as String
         cell.jogosLabel.text = "\(Item.objectForKey("match") as! NSNumber)"
@@ -173,19 +169,12 @@ extension ClassificacaoViewController: AlterarCampeonatoDelegate {
             self.tableView.reloadData()
             print(description.description)
         }
-        else if description.description == "Alemão" {
-            championships = buscaService.getInfosByChampionship("Alemao")
-            self.tableView.reloadData()
-            print(description.description)
-        }
         else if description.description == "Francês" {
             championships = buscaService.getInfosByChampionship("Frances")
             self.tableView.reloadData()
             print(description.description)
         }
         else if description.description == "Espanhol" {
-            championships = buscaService.getInfosByChampionship("Espanhol")
-            self.tableView.reloadData()
             print(description.description)
         }
         
