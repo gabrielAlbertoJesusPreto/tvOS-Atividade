@@ -84,15 +84,12 @@ extension ClassificacaoViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier("HeaderIndentifier", forIndexPath: indexPath) as! HeaderTableViewCell
             return cell
         }
-        
+
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeIdentifier", forIndexPath: indexPath) as! TimeTableViewCell
-        //cell.layer.masksToBounds = true
-        //cell.contentView.layer.masksToBounds = false
-        cell.clipsToBounds = false
-        cell.contentView.clipsToBounds = false
-        cell.contentView.superview?.clipsToBounds = false
-        cell.backgroundColor = UIColor.clearColor()
-        
+        cell.posicaoLabel.text = String(indexPath.row)
+        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
+            return cell
+        }
         
         cell.timeLabel.text = Item.objectForKey("name") as! NSString as String
         cell.jogosLabel.text = "\(Item.objectForKey("match") as! NSNumber)"
@@ -111,40 +108,6 @@ extension ClassificacaoViewController: UITableViewDataSource {
 
 // MARK: - Table view delegate
 extension ClassificacaoViewController: UITableViewDelegate {
-//    func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-//        guard let indexPath = context.nextFocusedIndexPath else { return }
-//    }
-    
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let detail = self.storyboard!.instantiateViewControllerWithIdentifier("detailView") as! DetailViewController
-//        
-//        
-//        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
-//            return
-//        }
-//        
-//        
-//        let team = Team()
-//        
-//        team.name = Item.objectForKey("name") as! NSString as String
-//        team.imageName = Item.objectForKey("imageName") as! NSString as String
-//        team.match = Item.objectForKey("match") as? Int
-//        team.winner = Item.objectForKey("winner") as? Int
-//        team.loser = Item.objectForKey("loser") as? Int
-//        team.draw = Item.objectForKey("draw") as? Int
-//        team.position = indexPath.row
-//        team.points = Item.objectForKey("points") as? Int
-//
-//        
-//        detail.team = team
-//        
-//        
-//        self.navigationController?.pushViewController(detail, animated: false)
-//        
-//        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-//    }
-//    
-    
     
     func tableView(tableView: UITableView, canFocusRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         
