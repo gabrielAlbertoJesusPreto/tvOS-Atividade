@@ -39,6 +39,14 @@ class ClassificacaoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        if let cell = context.nextFocusedView as? TimeTableViewCell {
+            cell.logo.adjustsImageWhenAncestorFocused = true
+        }
+        
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -83,17 +91,13 @@ extension ClassificacaoViewController: UITableViewDataSource {
             return cell
         }
         
-        cell.posicaoLabel.text = String(indexPath.row)
-        guard let Item = championships.objectAtIndex(indexPath.row-1) as? NSDictionary else{
-            return cell
-        }
-        
         cell.timeLabel.text = Item.objectForKey("name") as! NSString as String
         cell.jogosLabel.text = "\(Item.objectForKey("match") as! NSNumber)"
         cell.vitoriasLabel.text = "\(Item.objectForKey("winner") as! NSNumber)"
         cell.derrotasLabel.text = "\(Item.objectForKey("loser") as! NSNumber)"
         cell.empatesLabel.text = "\(Item.objectForKey("draw") as! NSNumber)"
         cell.pontosLabel.text = "\(Item.objectForKey("points") as! NSNumber)"
+        cell.logo.image = UIImage(named: Item.objectForKey("imageName") as! NSString as String)
         
         return cell
     }
